@@ -1,0 +1,23 @@
+group 'com.github.zetten'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'com.squareup.okhttp3:okhttp:3.6.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.awaitility:awaitility:2.0.0'
+    testCompile 'org.hamcrest:hamcrest-junit:2.0.0.0'
+    testCompile 'org.seleniumhq.selenium:selenium-java:3.0.1'
+    testCompile 'org.slf4j:slf4j-api:1.7.22'
+    testCompile 'org.testcontainers:selenium:1.1.8'
+    testCompile 'org.testcontainers:testcontainers:1.1.8'
+
+    testRuntime 'ch.qos.logback:logback-classic:1.1.9'
+}
